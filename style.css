@@ -260,11 +260,24 @@ section{padding:6rem 3rem;position:relative}
 #about{background:var(--surface)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
 .about-img-wrap{position:relative}
+@media (max-width: 900px) {
+  .about-img {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-img {
+    max-width: 420px;
+  }
+}
 .about-img {
   width: 100%;
-  max-width: 300px;
-  aspect-ratio: 3/4;
+  max-width: 380px;   /* desktop limit */
+  aspect-ratio: 3 / 4;
   overflow: hidden;
+  border-radius: 6px;
 }
 .about-img img {
   width: 100%;
